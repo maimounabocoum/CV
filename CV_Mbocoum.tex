@@ -1,0 +1,209 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Maïmouna} % Your first name
+\familyname{BOCOUM} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{95 rue du docteur Roux}{Saint-Maur des fossés, France}
+\mobile{(+33) 6 14 06 41 50}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{physics@mbocoum.fr}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{French Driving Licence}
+%\photo[70pt][0.4pt]{pictures/picture.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+%% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2012}{Master Degree}{Ecole Polytechnique- UPMC}{Paris}{}{Nuclear Fusion Program}  % Arguments not required can be left empty
+\cventry{2009--2012}{Engineering degree}{ENSTA Paristech}{Paris}{}{Specialized in physics and mathematics}
+\cventry{2002--2016}{Doctorate}{Ecole Polytechnique}{Paris}{}{}
+
+\section{PhDThesis}
+
+\cvitem{Title}{High-order harmonic and electron beams from plasma mirrors}
+\cvitem{Supervisors}{Professor Rodrigo Lopez-Martens}
+\cvitem{Description}{Experimental work on the generation of intense XUV radiation and on the acceleration of electrons in laser-plasma interaction schemes at relativistic intensities. My work consisted in setting up the experiment, analyzing the data and working together with theoreticians on the interpretation of our experimental results.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Research experience}
+
+
+
+\cventry{2012--Present}{PhD}
+{%institution
+\textsc{Laboratoire d'Optique Appliquée}}
+{%location
+Palaiseau}
+{}
+{% details of the work
+Detailed achievements:
+Experimental PhD work on high-order harmonic generation from relativistic plasma mirrors: femtosecond pump-probe metrology, X-UV spectroscopy, fast electron detection and spectrometry, few cycle pulse metrology, kHz solid target metrology, design of a post-compression chamber, computer interface of experimental set-up, data analysis and analytical/numerical modeling. 
+}
+
+%------------------------------------------------
+
+\cventry{2012}
+{Master internship}
+{\textsc{Laboratoire d'Utilisation des Lasers Intenses}}
+{Palaiseau}
+{}
+{Participation to a time-resolved pump-probe diffraction campaign to study the iron phase transition at high radiation pressures. }
+
+%------------------------------------------------
+
+
+
+\cventry{2010}{Summer internship}{}{\textsc{Polytechnique of Montreal}}{Quebec}{Work in organic electronics consisting in: 
+\begin{itemize}
+\item 
+Experimental study on the mechanism of charge transport in melanin. 
+\item Theoretical work on tetracene growth and polycrystalline properties. \end{itemize}}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Grants and awards}
+
+\cvitem{2012}{PHD scolarship from ENSTA-Paritech}
+\cvitem{2014}{Best student presentation award at the ``International Conference on Ultra Intense Lasers', Goa-India}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{C/C++}, Linux}
+\cvitem{Intermediate}{LaTeX, Solidworks, Labview}
+\cvitem{Advanced}{Matlab}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching experience}
+
+\cvitem{2012 - 2016}{\begin{itemize} \item Teacher assistant in quantum mechanics for first year engineer students at ENSTA ParisTech (total 80 hours)
+\item Teaching in non-linear optics for second year students at ENSTA ParisTech (total 72 hours).
+\end{itemize}}
+\cvitem{2008 – 2009}{Mathematics examiner for preparatory classes at Michelet High School, Paris. Employer: French Education  }
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{French}{Mothertongue}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Able to hold a conversation}
+\cvitemwithcomment{Italian}{Intermediate}{Basic words and phrases only}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{List of publications}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\begin{itemize}
+\item J. Wünsche, G. Tarabella, S Bertolazz, \textbf{M.Bocoum} et al. "The correlation between gate dielectric, film growth, and charge transport in organic thin film transistors: the case of vacuum-sublimed tetracene thin films." Journal of Materials Chemistry” C  1, pp967-976  (2013) 
+
+\item W. Okell, T. Witting, D. Fabris, D. Austin, \textbf{M.Bocoum} and al. "Carrier-envelope phase stability of hollow fibers used for high-energy few-cycle pulse generation." Optics letters 38. pp3918-3021 (2013)
+
+\item \textbf{M. Bocoum} and al. "Practical spatial phase shift imaging interferometer for femtosecond characterization of plasma mirrors” “Optics letters 40”pp3009-30012 (2015)
+
+\item B. Beaurepaire, A. Vernier, \textbf{M.Bocoum} and al. "Effect of the laser wave front in a laser-plasma accelerator.” “Physical Review X” pp.031012. (2015)
+
+
+\item \textbf{M. Bocoum}  and al.. "Anticorrelated emission of high-order harmonics and fast electron beams for relativistic plasma mirrors”  “Physical Review Letters 116.18” pp.185001  (2016)
+
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
