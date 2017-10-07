@@ -24,18 +24,16 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
+\moderncvstyle{banking}  % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}     % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{filecontents}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{cite}
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[scale=0.80]{geometry}  % Reduce document margins
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -53,6 +51,7 @@
 \email{physics@mbocoum.fr}
 %\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
 \extrainfo{French Driving Licence}
+%\extrainfo{Date of birth: 01-27-1989}
 %\photo[70pt][0.4pt]{pictures/picture.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 
@@ -94,15 +93,15 @@
 
 \section{Education}
 
+\cventry{2012--2016}{Doctorate}{Ecole Polytechnique}{Paris}{}{Femtosecond lasers and plasma physics}
 \cventry{2012}{Master Degree}{Ecole Polytechnique- UPMC}{Paris}{}{Nuclear Fusion Program}  % Arguments not required can be left empty
 \cventry{2009--2012}{Engineering degree}{ENSTA Paristech}{Paris}{}{Specialized in physics and mathematics}
-\cventry{2002--2016}{Doctorate}{Ecole Polytechnique}{Paris}{}{}
 
 \section{PhDThesis}
 
 \cvitem{Title}{High-order harmonic and electron beams from plasma mirrors}
-\cvitem{Supervisors}{Professor Rodrigo Lopez-Martens}
-\cvitem{Description}{Experimental work on the generation of intense XUV radiation and on the acceleration of electrons in laser-plasma interaction schemes at relativistic intensities. My work consisted in setting up the experiment, analyzing the data and working together with theoreticians on the interpretation of our experimental results.}
+\cvitem{Supervisors}{Professor Lopez-Martens}
+\cvitem{Description}{Experimental work on the generation of intense XUV radiation and electron beams from plasmas driven with intense femtosecond laser pulses. My work consisted in setting up the experiment, analyzing the data and working together with theoreticians on the interpretation of experimental results.}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -110,9 +109,23 @@
 
 \section{Research experience}
 
+%------------------------------------------------
 
+\cventry{2017}
+{Post-Doctorate}
+{\textsc{Institut Langevin-INSERM}}
+{Paris}
+{}
+{Development of Acousto-Optic imaging prototype for medical imaging in the scope of MALT Plan Cancer project. Experimental work on photorefractive and hold-burning filtering. Theoretical work on acoustic beam forming.}
 
-\cventry{2012--Present}{PhD}
+\cventry{2016-217}
+{Post-Doctorate}
+{\textsc{Laboratoire d'Optique Appliquée}}
+{Palaiseau}
+{}
+{Experimental working on high-order harmonic generation in continuity of PhD}
+
+\cventry{2012--2016}{PhD}
 {%institution
 \textsc{Laboratoire d'Optique Appliquée}}
 {%location
@@ -130,17 +143,16 @@ Experimental PhD work on high-order harmonic generation from relativistic plasma
 {\textsc{Laboratoire d'Utilisation des Lasers Intenses}}
 {Palaiseau}
 {}
-{Participation to a time-resolved pump-probe diffraction campaign to study the iron phase transition at high radiation pressures. }
+{Experimental part in a time-resolved pump-probe diffraction campaign to study the iron phase transition at high radiation pressures. }
 
 %------------------------------------------------
 
 
 
-\cventry{2010}{Summer internship}{}{\textsc{Polytechnique of Montreal}}{Quebec}{Work in organic electronics consisting in: 
-\begin{itemize}
-\item 
-Experimental study on the mechanism of charge transport in melanin. 
-\item Theoretical work on tetracene growth and polycrystalline properties. \end{itemize}}
+\cventry{2010}{Summer internship}{\textsc{Polytechnique of Montreal}}
+{Quebec}
+{}
+{Experimental characterization of charge transport mechanism in melanin. Theoretical work on tetracene growth and polycrystalline properties.}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
@@ -149,7 +161,7 @@ Experimental study on the mechanism of charge transport in melanin.
 \section{Grants and awards}
 
 \cvitem{2012}{PHD scolarship from ENSTA-Paritech}
-\cvitem{2014}{Best student presentation award at the ``International Conference on Ultra Intense Lasers', Goa-India}
+\cvitem{2014}{Best junior presentation award at the ``International Conference on Ultra Intense Lasers', Goa-India}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
@@ -157,9 +169,9 @@ Experimental study on the mechanism of charge transport in melanin.
 
 \section{Computer skills}
 
-\cvitem{Basic}{\textsc{C/C++}, Linux}
-\cvitem{Intermediate}{LaTeX, Solidworks, Labview}
-\cvitem{Advanced}{Matlab}
+\cvitem{Basic}{\textsc{C/C++}, html , Linux}
+\cvitem{Intermediate}{LaTeX, Solidworks}
+\cvitem{Advanced}{Matlab, Labview}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
@@ -167,9 +179,8 @@ Experimental study on the mechanism of charge transport in melanin.
 
 \section{Teaching experience}
 
-\cvitem{2012 - 2016}{\begin{itemize} \item Teacher assistant in quantum mechanics for first year engineer students at ENSTA ParisTech (total 80 hours)
-\item Teaching in non-linear optics for second year students at ENSTA ParisTech (total 72 hours).
-\end{itemize}}
+\cvitem{2012 - 2017}{Teacher assistant at ENSTA ParisTech in Quantum mechanics for first year engineer students  (24 hours / year) }
+\cvitem{2012 - 2016}{Teacher assistant at ENSTA ParisTech in Non-linear optics for second year students  (22 hours / year)}
 \cvitem{2008 – 2009}{Mathematics examiner for preparatory classes at Michelet High School, Paris. Employer: French Education  }
 
 %----------------------------------------------------------------------------------------
@@ -191,16 +202,19 @@ Experimental study on the mechanism of charge transport in melanin.
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
 \begin{itemize}
-\item J. Wünsche, G. Tarabella, S Bertolazz, \textbf{M.Bocoum} et al. "The correlation between gate dielectric, film growth, and charge transport in organic thin film transistors: the case of vacuum-sublimed tetracene thin films." Journal of Materials Chemistry” C  1, pp967-976  (2013) 
+\item J. Wünsche, G. Tarabella, S Bertolazz, \textbf{M.Bocoum} et al. "The correlation between gate dielectric, film growth, and charge transport in organic thin film transistors: the case of vacuum-sublimed tetracene thin films."  \textbf{Journal of Materials Chemistry C}  1.5, pp967-976  (2013) 
 
-\item W. Okell, T. Witting, D. Fabris, D. Austin, \textbf{M.Bocoum} and al. "Carrier-envelope phase stability of hollow fibers used for high-energy few-cycle pulse generation." Optics letters 38. pp3918-3021 (2013)
+\item W. Okell, T. Witting, D. Fabris, D. Austin, \textbf{M.Bocoum} and al. "Carrier-envelope phase stability of hollow fibers used for high-energy few-cycle pulse generation." \textbf{Optics letters} 38. pp3918-3021 (2013)
 
-\item \textbf{M. Bocoum} and al. "Practical spatial phase shift imaging interferometer for femtosecond characterization of plasma mirrors” “Optics letters 40”pp3009-30012 (2015)
+\item A. Denoeud, N. Osaki, A.Benuzzi-Mounaix, H. Uranishi, Y. Kondo, R. Kodamac, E. Brambrink, A. Ravasio, \textbf{M. Bocoum} and al. "Dynamic X-ray diffraction observation of shocked solid iron up to 170 GPa” \textbf{PNAS} 113.28 pp7745-7749 (2016)
 
-\item B. Beaurepaire, A. Vernier, \textbf{M.Bocoum} and al. "Effect of the laser wave front in a laser-plasma accelerator.” “Physical Review X” pp.031012. (2015)
+\item \textbf{M. Bocoum} and al. "Practical spatial phase shift imaging interferometer for femtosecond characterization of plasma mirrors” \textbf{Optics letters} 40 pp3009-30012 (2015)
 
+\item B. Beaurepaire, A. Vernier, \textbf{M.Bocoum} and al. "Effect of the laser wave front in a laser-plasma accelerator.” \textbf{Physical Review X} pp.031012. (2015)
 
-\item \textbf{M. Bocoum}  and al.. "Anticorrelated emission of high-order harmonics and fast electron beams for relativistic plasma mirrors”  “Physical Review Letters 116.18” pp.185001  (2016)
+\item \textbf{M. Bocoum}  and al.. "Anticorrelated emission of high-order harmonics and fast electron beams for relativistic plasma mirrors”  \textbf{Physical Review Letters} 116.18” pp.185001  (2016)
+
+\item  D. Guénot, D. Gustas, A. Vernier, B. Beaurepaire, F. Böhle, \textbf{M. Bocoum} and al. "Relativistic electron beams driven by kHz” \textbf{Nature Photonics} 11 pp293-296 (2017)
 
 \end{itemize}
 

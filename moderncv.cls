@@ -219,7 +219,7 @@
 \newcommand*{\homepage}[2]{\def\@homepage{#1}\def\@homepagetitle{#2}}
 
 % colors
-\definecolor{color0}{rgb}{0,0,0}% main default color, normally left to black
+\definecolor{color0}{rgb}{0,0,1}% main default color, normally left to black
 \definecolor{color1}{rgb}{0,0,0}% primary theme color
 \definecolor{color2}{rgb}{0,0,0}% secondary theme color
 \definecolor{color3}{rgb}{0,0,0}% tertiary theme color
