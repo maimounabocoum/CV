@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{banking}  % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}     % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{filecontents}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{cite}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.80]{geometry}  % Reduce document margins
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Maïmouna} % Your first name
+\familyname{BOCOUM} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{95 rue du docteur Roux}{Saint-Maur des fossés, France}
+\mobile{(+33) 6 14 06 41 50}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{physics@mbocoum.fr}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Permis B}
+%\extrainfo{Date of birth: 01-27-1989}
+%\photo[70pt][0.4pt]{pictures/picture.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+%% To remove the cover letter, comment out this entire block
+%
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Éducation}
+
+\cventry{2012--2016}{Doctorat}{École Polytechnique}{Paris}{}{Physique du cycle optique}
+\cventry{2012}{Master}{École Polytechnique- UPMC}{Paris}{}{Sciences de la Fusion}  % Arguments not required can be left empty
+\cventry{2009--2012}{Diplôme d'ingénieur}{ENSTA Paristech}{Paris}{}{Spécialisée en Physique et Mathématiques}
+
+\section{Thèse de doctorat}
+
+\cvitem{Titre}{Génération d’harmoniques d'ordres élevés et accélération d'électrons sur miroirs plasma}
+\cvitem{Directeur de Thèse}{Rodrigo Lopez-Martens}
+\cvitem{Description}{Lorsqu'une impulsions laser de quelques cycles optiques et d'intensité élévée ($\sim 10^{18}\mathrm{W/cm^2}$) interagit avec un plasma de densité solide, les électrons mis en mouvement génèrent, à chaque cycle, une impulsion attoseconde ($1\mathrm{as} = 10^{-18}\mathrm{s}$) dans l'X-UV. Cette émission cohérente étant périodique, le spectre d'émission X-UV est modulé par les harmoniques d'ordres élevés de l'impulsion laser initiale. Simultanément à la génération d'harmoniques, les champs très élevés ($\sim \mathrm{TV/m}$) mis en jeu lors de l’interaction conduisent à l'accélération d'électrons.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Expérience en Recherche}
+
+%------------------------------------------------
+
+\cventry{2017}
+{Post-Doctorat}
+{\textsc{Institut Langevin-INSERM}}
+{Paris}
+{}
+{Développement d'une sonde exploitant l'effet Acousto-Optique (AO) pour l'imagerie médicale dans le cadre du projet MALT Plan Cancer. Travail expérimental sur le filtrage de fréquences optiques par holographie photoréfractive et hole-burning. Travail théorique sur la reconstruction d'images AO selon le type d'ondes acoustiques utilisées.}
+
+\cventry{2016-217}
+{Post-Doctorat}
+{\textsc{Laboratoire d'Optique Appliquée}}
+{Palaiseau}
+{}
+{Travail expérimental sur la génération d'harmoniques en continuité du travail de thèse}
+
+\cventry{2012-2016}{Thèse}
+{%institution
+\textsc{Laboratoire d'Optique Appliquée}}
+{%location
+Palaiseau}
+{}
+{% details of the work
+Thèse expérimentale sur la génération d'harmoniques d'ordres élevés sur miroirs plasmas. Conception d'une enceinte de post-compression, métrologie du cycle optique,  expériences pompe/sonde femtosecondes, spectroscopie d'électrons énergétiques ($\sim MeV$), stabilisation de cible solide kHz, programmation d'interfaces contrôle/commande Labview, traitement des données et développement de modèles analytiques , familiarisation avec les schémas de simulations numériques.
+}
+
+%------------------------------------------------
+
+\cventry{2012}
+{Stage de Master}
+{\textsc{Laboratoire d'Utilisation des Lasers Intenses}}
+{Palaiseau}
+{}
+{Campagne expérimentale de diffraction X pompe/sonde pour l'étude de la transition de phase du fer $\alpha$ soumis à de hautes pressions radiatives.}
+
+%------------------------------------------------
+
+
+
+\cventry{2010}{Stage d'été}{\textsc{École Polytechnique de Montréal}}
+{Québec}
+{}
+{Caractérisation expérimentale du transport de charge dans la mélanine. Travail théorique sur la croissance de couches de tétracène et études de leurs propriétés polycristallines.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Bourses et Prix}
+
+\cvitem{2012}{Bourse de thèse de l' ENSTA-Paritech}
+\cvitem{2014}{Prix de la meilleure présentation étudiante à la conférence ICUIL ( ``International Conference on Ultra Intense Lasers'), Goa-Inde}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Informatique}
+
+\cvitem{Basique}{\textsc{C/C++}, html , Linux}
+\cvitem{Intermédiaire}{LaTeX, Solidworks}
+\cvitem{Avancée}{Matlab, Labview}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Monitorat}
+
+\cvitem{2012 - 2017}{Chargée de TD en première année à l' ENSTA ParisTech en Physique Quantique (24 heures / ans) }
+\cvitem{2012 - 2016}{Chargée de TD en deuxième année à l' ENSTA ParisTech en Optique non-linéaire (22 heures / ans)}
+\cvitem{2008 – 2009}{Colles de Mathématiques en première année de classe préparatoire à l'école Michelet, Paris.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Langues}
+
+\cvitemwithcomment{Anglais}{Courant}{Expérience de 3 ans aux État-Unis}
+\cvitemwithcomment{Espagnol}{Intermediaire}{Capable de tenir une conversation}
+\cvitemwithcomment{Italien}{Intermediaire}{}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\begin{itemize}
+\item J. Wünsche, G. Tarabella, S Bertolazz, \textbf{M.Bocoum} et al. "The correlation between gate dielectric, film growth, and charge transport in organic thin film transistors: the case of vacuum-sublimed tetracene thin films."  \textbf{Journal of Materials Chemistry C}  1.5, pp967-976  (2013) 
+
+\item W. Okell, T. Witting, D. Fabris, D. Austin, \textbf{M.Bocoum} and al. "Carrier-envelope phase stability of hollow fibers used for high-energy few-cycle pulse generation." \textbf{Optics letters} 38. pp3918-3021 (2013)
+
+\item A. Denoeud, N. Osaki, A.Benuzzi-Mounaix, H. Uranishi, Y. Kondo, R. Kodamac, E. Brambrink, A. Ravasio, \textbf{M. Bocoum} and al. "Dynamic X-ray diffraction observation of shocked solid iron up to 170 GPa” \textbf{PNAS} 113.28 pp7745-7749 (2016)
+
+\item \textbf{M. Bocoum} and al. "Practical spatial phase shift imaging interferometer for femtosecond characterization of plasma mirrors” \textbf{Optics letters} 40 pp3009-30012 (2015)
+
+\item B. Beaurepaire, A. Vernier, \textbf{M.Bocoum} and al. "Effect of the laser wave front in a laser-plasma accelerator.” \textbf{Physical Review X} pp.031012. (2015)
+
+\item \textbf{M. Bocoum}  and al.. "Anticorrelated emission of high-order harmonics and fast electron beams for relativistic plasma mirrors”  \textbf{Physical Review Letters} 116.18” pp.185001  (2016)
+
+\item  D. Guénot, D. Gustas, A. Vernier, B. Beaurepaire, F. Böhle, \textbf{M. Bocoum} and al. "Relativistic electron beams driven by kHz” \textbf{Nature Photonics} 11 pp293-296 (2017)
+
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
